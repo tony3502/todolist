@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { v4 } from "uuid";
 
-const EditCss={
-  border:"5px solid black",
-  width:"400px",
-  height:"300px",
-}
-
 const Edit = ({ add,submittingData }) => {
   const [note, setNote] = useState("");
   function noteChange(e) {
@@ -39,17 +33,21 @@ const Edit = ({ add,submittingData }) => {
   }
 
   return (
-    <div style={EditCss}>
+    <div className="Edit">
       <h1>備忘錄</h1>
       <p>記事:</p>
-      <input type="text" value={note} onChange={noteChange} />
+      <input type="text" value={note} onChange={noteChange} className="editInput" />
       <p>日期:</p>
-      <input type="date" value={date} onChange={dateChange} />
+      <input type="date" value={date} onChange={dateChange} className="editInput" />
       <p>時間:</p>
-      <input type="time" value={time} onChange={timeChange} />
-      <button onClick={addItem} className="add">
+      <input type="time" value={time} onChange={timeChange} className="editInput"/>
+      <a onClick={addItem} className="editButton">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
         新增
-      </button>
+      </a>
     </div>
   );
 };

@@ -2,10 +2,7 @@ import { useState,useEffect,useRef } from "react";
 import { API_GET_DATA } from "../../global/constants";
 import Edit from "./components/Edit";
 import List from "./components/List";
-
-const app = {
-  color: "red",
-};
+import "./Home.css"
 
 async function fetchData(setData){
   const res = await fetch(API_GET_DATA)

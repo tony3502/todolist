@@ -1,0 +1,163 @@
+*
+{
+    background-color: rgb(72, 72, 87);
+    font-family: "Poppings";
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:aliceblue;
+}
+.app
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+}
+.Edit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid;
+}
+.editInput
+{
+    border: solid rgb(201, 108, 209);
+    color: aliceblue;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+}
+.editButton
+{
+    position: relative;
+    background-color: rgb(30,30,30);
+    color: rgba(255, 255, 255,0.4);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding:  10px 20px;
+    transition: 0.3s;
+}
+.editButton:hover
+{
+    color: rgba(255, 255, 255,1);
+}
+.editButton span
+{
+    display: block;
+    position: absolute;
+    background: rgb(231, 137, 240);
+    
+}
+.editButton span:nth-child(1)
+{
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.editButton:hover span:nth-child(1)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.editButton span:nth-child(2)
+{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.editButton:hover span:nth-child(2)
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.editButton span:nth-child(3)
+{
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+.editButton:hover span:nth-child(3)
+{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.editButton span:nth-child(4)
+{
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.editButton:hover span:nth-child(4)
+{
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.item
+{
+    display: flex;
+
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+.itemP
+{
+    text-align: left;
+    word-wrap: break-word;
+    width: 300px;
+    
+}
+.itemDate
+{
+    margin: 0%;
+    text-align: left;
+    display: inline-block;
+    width: 260px;
+
+    
+}
+.itemTime
+{
+    display: inline;
+}
+.remove
+{
+    width: 250px;
+}
